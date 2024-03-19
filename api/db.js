@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 
-dotenv.config();
-
+console.log(process.env.mongoURL)
 const connection = await mongoose.connect(process.env.mongoURL);
 
 export default connection;
