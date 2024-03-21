@@ -87,7 +87,7 @@ export default function Search() {
       setSidebardata({
         ...sidebardata,
         [e.target.id]:
-          e.target.checked || e.target.checked === 'true' ? true : false,
+          e.target.checked || e.target.checked === 'true'?true:false,
       });
     }
 
